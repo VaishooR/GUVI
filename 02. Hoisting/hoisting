@@ -1,0 +1,16 @@
+// var
+console.log(name1);
+var name1='Vaishoo';
+// output: undefined
+
+
+// let:
+console.log(car);
+let car='Honda';     
+// output: Uncaught ReferenceError: Cannot access 'car' before initialization
+
+
+// const:
+console.log(food);
+const food='Briyani';
+// output: Uncaught ReferenceError: Cannot access 'food' before initialization
