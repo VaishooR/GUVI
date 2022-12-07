@@ -1,0 +1,45 @@
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+
+    <p class="cars">Car 1</p>
+    <p class="cars">Car 2</p>
+
+    <div id="food">Briyani</div>
+
+
+
+    <script>
+
+        // getElementsByTagName(' ')
+        const headings= document.getElementsByTagName('h1');
+        console.log(headings);               // HTMLCollection(2) 0: h1 1: h1 length: 2 [[Prototype]]: HTMLCollection
+        console.log(headings[0]);            // <h1>Heading 1</h1>
+        console.log(headings[0].innerText);  // Heading 1
+        console.log(headings[0].innerHTML);  // Heading 1
+
+        // getElementsByClassName(' ')
+        const cars =document.getElementsByClassName('cars');
+        console.log(cars);                   // HTMLCollection(2) [p.cars, p.cars]
+        console.log(cars[0]);                // <p class="cars">Car 1</p>
+        console.log(cars[0].innerText);      // Car 1
+        console.log(cars[0].innerHTML);      // Car 1
+
+        // getElementByIdName(' ')                           //id selector doesnot return an array of elements. So we donot use index here to choose elements. Because there is only one with one id name.
+        const food=document.getElementById('food');  
+        console.log(food);                           // <div id="food">Briyani</div>
+        console.log(food.innerText);                 // Briyani
+        console.log(food.innerHTML);                 // Briyani
+
+        // querySelectorAll(' ')                              //querySelectorAll is used to select from array of elemets, so it is used for class names and tags.
+        const tags=document.querySelectorAll('h1');
+        console.log(tags[0].innerText)                   // Heading 1
+        const names=document.querySelectorAll('.cars');
+        console.log(cars[0].innerText)                   // Car 1
+
+        // querySelector(' ')                               
+        const uniqueid=document.querySelector('#food');
+        console.log(uniqueid.innerText)                  // Briyani
+
+    </script>
+</body>
