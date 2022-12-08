@@ -110,3 +110,75 @@ p{
 
 
 
+
+
+USING FOR-EACH:
+
+function foo(country){
+  
+    const container=document.createElement('div');
+    container.setAttribute('class','container');
+    
+    container.innerHTML=`
+      <img src='${country.flag}'/>
+      <div class='content'>
+      <h3>${country.name}</h3>
+      <p>Poulation: ${country.population}</p>
+      <p>Capital: ${country.capital}</p>
+      </div>
+    `
+   document.body.append(container); 
+  
+}
+
+countriesInfo.forEach((country)=>foo(country))
+
+----------------------------------
+
+function foo(country){
+   
+    const{flag,name,population,cpital}=country           <--- Object destructuring
+  
+    const container=document.createElement('div');
+    container.setAttribute('class','container');
+    
+    container.innerHTML=`
+      <img src='${flag}'/>
+      <div class='content'>
+      <h3>${name}</h3>
+      <p>Poulation: ${population}</p>
+      <p>Capital: ${capital}</p>
+      </div>
+    `
+   document.body.append(container); 
+  
+}
+
+countriesInfo.forEach((country)=>foo(country))
+
+--------------------------------
+
+function foo({flag,name,population,cpital}){                   <--- Object destructuring
+   
+    const container=document.createElement('div');
+    container.setAttribute('class','container');
+    
+    container.innerHTML=`
+      <img src='${flag}'/>
+      <div class='content'>
+      <h3>${name}</h3>
+      <p>Poulation: ${population}</p>
+      <p>Capital: ${capital}</p>
+      </div>
+    `
+   document.body.append(container); 
+  
+}
+
+countriesInfo.forEach((country)=>foo(country))
+
+-----------------------------------
+
+
+
+
