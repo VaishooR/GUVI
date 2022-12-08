@@ -25,4 +25,9 @@
         <li>3.Bangalore</li>
         <li>4.Mumbai</li>
         <li>5.Hyderabad</li>`
+        
+  To modify only one <li> element:
+        const items=document.querySelector('.lists > li:nth-child(2');
+        items.innerText='NEW FRUIT'
+
   
