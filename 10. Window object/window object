@@ -1,0 +1,3 @@
+JS can access Document object model.
+Apart from this, JS can also access browsr related details which is available as Window Object.
+Window object is used to access methods of current browser tab.
