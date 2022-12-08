@@ -1,0 +1,3 @@
+window.alert('Welcome');                             //message
+window.confirm('Do you want to exit?');              //yes or no
+window.prompt('Please enter login password:')        //input
