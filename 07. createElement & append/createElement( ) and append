@@ -1,0 +1,5 @@
+        const newHeading=document.createElement('h1');
+        newHeading.innerText="Hello Vaishoo";
+        
+        document.body.append(newHeading);                          <-- appends to body i.e gets added to the end of the doc
+        document.querySelector('#food').append(newHeading)         <-- appends to the specific element i.e gets added to the bottom where specified ele is present
