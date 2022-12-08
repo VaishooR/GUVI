@@ -1,4 +1,7 @@
 append- can take multiple arguments
+Ex: document.body.append(flag,name,population,region,capital);
+
 appendChild - can take only one argument.
+Ex: document.body.append(container);
 
 append is latest version of appendchild.
