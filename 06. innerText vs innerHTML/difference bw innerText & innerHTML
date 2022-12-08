@@ -7,7 +7,22 @@
      </ol>
     
     
-        
+  To replace the text:      
         const lists=document.querySelector('.lists');
         lists.innerText=`<li>1.Chennai</li>`;              //  <li>1.Chennai</li>
         lists.innerHTML=`<li>1.Chennai</li>`;              //  1.Chennai
+
+  To replace the text with many <li>:
+        lists.innerHTML  =  `<li>1.Chennai</li>
+        <li>2.Delhi</li>
+        <li>3.Bangalore</li>
+        <li>4.Mumbai</li>
+        <li>5.Hyderabad</li>`
+        
+  To add the extra <li> to the existing list:
+         lists.innerHTML  +=  `<li>1.Chennai</li>         //We use += to add elements
+        <li>2.Delhi</li>
+        <li>3.Bangalore</li>
+        <li>4.Mumbai</li>
+        <li>5.Hyderabad</li>`
+  
