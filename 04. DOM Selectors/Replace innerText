@@ -1,0 +1,29 @@
+    <div class="todo">To be replaced</div>
+    <div class="todo">To be replaced</div>
+    <div class="todo">To be replaced</div>
+    <div class="todo">To be replaced</div>
+    <div class="todo">To be replaced</div>
+
+
+
+    <script>
+
+        const todo=document.querySelectorAll('.todo');
+        for(var i of todo){
+            i.innerText="Hey i got replaced with new text"   
+        }
+        
+     <script>
+        
+        
+        
+        
+        
+        
+     OUTPUT:
+       
+       Hey i got replaced with new text
+       Hey i got replaced with new text
+       Hey i got replaced with new text
+       Hey i got replaced with new text
+       Hey i got replaced with new text
