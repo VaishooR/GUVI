@@ -1,0 +1,4 @@
+append- can take multiple arguments
+appendChild - can take only one argument.
+
+append is latest version of appendchild.
