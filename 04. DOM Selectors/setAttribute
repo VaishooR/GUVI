@@ -1,0 +1,13 @@
+
+<body>
+<label for="">Name</label>
+<input type="text" class="inp">
+
+
+<script>
+        const inputForm=document.querySelector('.inp');
+        console.log(inputForm);
+        inputForm.setAttribute('placeholder','Enter your name');
+        inputForm.setAttribute('style','background-color:purple')
+</script>
+</body>
