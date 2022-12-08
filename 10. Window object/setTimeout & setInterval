@@ -1,0 +1,9 @@
+console.log('Wait...')
+window.setTimeout(()=>{
+   console.log('After 4 sec')
+},4000)
+
+
+window.setInterval(()=>{
+    console.log('2 sec interval')
+},2000)
