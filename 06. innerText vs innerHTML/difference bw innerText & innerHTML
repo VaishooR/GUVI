@@ -1,0 +1,13 @@
+     <ol class="lists">
+        <li>1.Orange</li>
+        <li>2.Apple</li>
+        <li>3.Grapes</li>
+        <li>4.Banana</li>
+        <li>5.Lemon</li>
+     </ol>
+    
+    
+        
+        const lists=document.querySelector('.lists');
+        lists.innerText=`<li>1.Chennai</li>`;              //  <li>1.Chennai</li>
+        lists.innerHTML=`<li>1.Chennai</li>`;              //  1.Chennai
