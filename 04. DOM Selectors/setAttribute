@@ -11,3 +11,10 @@
         inputForm.setAttribute('style','background-color:purple')
 </script>
 </body>
+
+
+
+Method-2:
+
+inputForm.style.placeholder="Enter your name";
+inputForm.style.backgroundColor="purple";
