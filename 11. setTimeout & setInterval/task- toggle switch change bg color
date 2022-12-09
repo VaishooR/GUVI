@@ -1,0 +1,46 @@
+var colors=['red','green','yellow','blue','black'];
+var index=0;
+var bg;
+
+function start(){
+  bg=setInterval(()=>{
+ 
+  document.body.style.background=colors[index];
+  index++;
+  if(index===colors.length){
+    index=0;
+  }
+ 
+},1000)
+}
+
+
+   
+   
+   
+   
+   
+function stop(){
+  clearInterval(bg)
+}
+
+
+
+
+
+
+
+let bgswitch="OFF";
+
+function toggle(){
+  if(bgswitch === 'OFF'){
+    start();
+    bgswitch="ON";
+    console.log('on');
+  }else{
+      stop();
+      bgswitch="OFF";
+    console.log('off');
+  }
+}
+
