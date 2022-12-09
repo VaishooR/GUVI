@@ -1,0 +1,19 @@
+<body>
+  <textarea cols=30 rows=10 
+    oninput=foo() maxlength=10></textarea>
+  <span>0/10</span> 
+</body>
+
+
+
+
+
+function foo(){
+  console.log(event.target.value)
+  var wordlength=event.target.value.length;
+  var word=document.querySelector('span');
+  word.innerText=wordlength+'/10';
+  if(wordlength>9){
+    console.log('stop typing...')
+  }
+}
