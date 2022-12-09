@@ -1,0 +1,28 @@
+console.log('Hi')
+
+var vaish=setInterval(()=>{
+  console.log('Vaishoo')
+},2000)
+
+clearInterval(vaish)
+
+
+----------------------------------
+To print the name 3 times and stop:
+
+console.log('Hi')
+var vaish=setInterval(()=>{
+  console.log('Vaishoo')
+},2000)
+
+setTimeout(()=>{
+  clearInterval(vaish)
+},6000)
+
+
+OUTPUT:
+"Hi"
+"Vaishoo"
+"Vaishoo"
+"Vaishoo"
+ ----------------------------------
