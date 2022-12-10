@@ -1,0 +1,64 @@
+const hero=(age,name)=>
+ new Promise((resolve,reject)=>{
+   if(age>18){
+     resolve(name);
+   }else{
+     reject("Failed");
+   }
+ })
+
+function dungeon(){
+  console.log(hero(20,'vaish'))
+}
+dungeon()
+
+
+
+
+
+OUTPUT:
+Promise
+[[Prototype]]
+: Promise
+[[PromiseState]]
+: "fulfilled"
+[[PromiseResult]]
+: "vaish"
+
+
+
+if age<18 output is : rejected
+
+OUTPUT:
+
+Promise {<rejected>: 'Failed'}
+[[Prototype]]
+: Promise
+[[PromiseState]]
+: "rejected"
+[[PromiseResult]]
+: "Failed"
+
+
+---------------------------------------
+
+const hero=(age,name)=>
+ new Promise((resolve,reject)=>{
+   if(age>18){
+     setTimeout(()=>resolve(name),5000);
+   }else{
+     reject("Failed");
+   }
+ })
+
+function dungeon(){
+  console.log(hero(20,'vaish'))
+}
+dungeon()
+
+
+OUTPUT:
+
+Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "pending"[[PromiseResult]]: undefined
+
+----------------------------------
