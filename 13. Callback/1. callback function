@@ -1,0 +1,25 @@
+function greet(name, callback) {                       // function
+    console.log('Hi' + ' ' + name);
+    callback();
+}
+
+
+function callMe() {                                    // callback function
+    console.log('I am callback function');
+}
+
+
+greet('Peter', callMe);                                // passing function as an argument
+
+
+
+OUTPUT:
+Hi Peter
+I am callback function
+
+
+
+
+Callback function:
+A function that is passed as an argument to another function. Here callMe() function is the cb function. This cb function is sent as an argument, for the parameter 'callback' in the function greet.
+Callback function starts its execution, only when a previous function completes its execution.
