@@ -1,0 +1,56 @@
+
+setTimeout(()=>{
+  console.log('Waiting..')
+},0);
+
+console.log('One');
+console.log('Two');
+console.log('three');
+console.log('four')
+
+OUTPUT:
+
+
+"One"
+"Two"
+"three"
+"four"
+"Waiting.. 1"
+
+
+
+
+----------------------------------
+
+
+
+
+setTimeout(()=>{
+  console.log('Waiting.. 1')
+},4000);
+
+setTimeout(()=>{
+  console.log('Waiting.. 2')
+},2000);
+console.log('One');
+console.log('Two');
+console.log('three');
+console.log('four')
+
+OUTPUT:
+
+"One"
+"Two"
+"three"
+"four"
+"Waiting.. 2"
+"Waiting.. 1"
+
+
+
+
+---------------------------------
+
+
+
+
