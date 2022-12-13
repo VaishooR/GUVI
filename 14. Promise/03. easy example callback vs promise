@@ -1,3 +1,44 @@
+CALLBACK:
+--------
+
+
+let marks=false;
+let age=false;
+
+function eligibility(can,cannot){
+  if(marks && age){
+    can('IT or CS')
+  }else if(marks){
+    can('ECE')
+  }else if(age){
+    can('EEE')
+  }else{
+    cannot('Not eligible to choose any course')
+  }
+}
+
+eligibility(
+            (msg)=>{console.log('You are eligible to choose '+msg)},
+            (error)=>{console.log(error)}
+           )
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+PROMISE:
+--------
+
+
 let marks=false;
 let age=false;
 
@@ -32,3 +73,16 @@ age=false           //"You are eligible to choose ECE"
 
 marks=false
 age=true           //"You are eligible to choose EEE"
+
+
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
