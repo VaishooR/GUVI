@@ -1,0 +1,11 @@
+In most cases we dont create promise, We use promise.
+
+Promises are used for processes in the backend takes too long to complete.
+We use fetch() method to get the data from backend.
+fetch() method always returns promise.
+so we only use the .then part of the promise here.
+
+Ex:
+fetch('https://restcountries.com/v3.1/all')
+.then((data)=>data.json())
+.then((actualdata)=>console.log(actualdata))
