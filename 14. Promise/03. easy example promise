@@ -1,0 +1,34 @@
+let marks=false;
+let age=false;
+
+const eligibility=new Promise((resolve,reject)=>{
+  if(marks && age){
+    resolve('IT or CS')
+  }else if(marks){
+    resolve('ECE')
+  }else if(age){
+    resolve('EEE')
+  }else{
+    reject('Not eligible to choose any course')
+  }
+})
+
+eligibility.then((msg)=>{console.log('You are eligible to choose '+msg)})
+           .catch((error)=>{console.log(error)})
+           
+           
+           
+           
+OUTPUT:
+
+marks=false
+age=false          //"Not eligible to choose any course"
+
+marks=true
+age=true           //"You are eligible to choose IT or CS"
+
+marks=true
+age=false           //"You are eligible to choose ECE"
+
+marks=false
+age=true           //"You are eligible to choose EEE"
