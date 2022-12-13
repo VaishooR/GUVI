@@ -1,0 +1,23 @@
+PROMISE.ALL
+-----------
+
+
+const video1=new Promise((resolve,reject)=>{
+   resolve('Video 1 uploaded')
+})
+const video2=new Promise((resolve,reject)=>{
+   resolve('Video 2 uploaded')
+})
+const video3=new Promise((resolve,reject)=>{
+   resolve('Video 3 uploaded')
+})
+
+Promise.all([video1,video2,video3])
+       .then((msgs)=>{console.log(msgs)})
+
+
+
+
+OUTPUT:
+
+["Video 1 uploaded", "Video 2 uploaded", "Video 3 uploaded"]
