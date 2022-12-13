@@ -20,3 +20,42 @@ OUTPUT:
 "3"
 "2"
 "1"
+
+
+
+
+
+
+Promise:
+
+
+const msg=(countdown)=>
+new Promise((resolve, reject)=>{
+    if(countdown>0){
+        setTimeout(()=>{
+            document.querySelector('.root').innerText=countdown;
+            resolve(countdown);
+        },1000)
+    } else {
+        reject('Try later')
+    }
+});
+msg(10)
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(n=>msg(--n))
+.then(()=>{
+    setTimeout(()=>{
+        document.querySelector('.root').innerHTML='Happy Independence Day';
+    },1000)
+})
+.catch(()=>console.log('Set countdown greater than 1'));
+
+
+
