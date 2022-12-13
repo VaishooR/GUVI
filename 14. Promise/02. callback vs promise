@@ -1,0 +1,70 @@
+CALLBACK:
+--------
+
+let userleft=false;
+let watchingOtherVideo=false;
+
+function myVideoCallback(callback,errorcallback){
+  if(userleft){
+    errorcallback({
+      name: 'User left',
+      msg:':('
+    })
+  }else if(watchingOtherVideo){
+    errorcallback({
+      name:'User is watching other videos',
+      msg:':( :('
+    })
+  }else{
+    callback('Thanks for watching my video :)')
+  }
+}
+
+myVideoCallback((msg)=>{console.log(msg)},
+        (error)=>{console.log(error)})
+        
+        
+ 
+ 
+OUTPUT:
+"Thanks for watching my video :)"
+----------------------------------------------------
+
+
+
+
+
+PROMISE:
+--------
+
+let userleft=false;
+let watchingOtherVideo=false;
+
+const myVideoPromise=new Promise(
+ (resolve,reject)=>{
+  if(userleft){
+    reject({
+      name: 'User left',
+      msg:':('
+    })
+  }else if(watchingOtherVideo){
+    reject({
+      name:'User is watching other videos',
+      msg:':( :('
+    })
+  }else{
+    resolve('Thanks for watching my video :)')
+  }
+}
+)
+
+myVideoPromise.then((msg)=>{console.log(msg)})
+        .catch((error)=>{console.log(error)})
+                
+        
+ 
+ 
+OUTPUT:
+"Thanks for watching my video :)"
+---------------------------------------
+
