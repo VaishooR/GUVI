@@ -20,8 +20,10 @@ function myVideoCallback(callback,errorcallback){
   }
 }
 
-myVideoCallback((msg)=>{console.log(msg)},
-        (error)=>{console.log(error)})
+myVideoCallback(
+                (msg)=>{ console.log(msg) },
+                (error)=>{ console.log(error) }
+               )
         
         
  
@@ -58,9 +60,12 @@ const myVideoPromise=new Promise(
 }
 )
 
-myVideoPromise.then((msg)=>{console.log(msg)})
-        .catch((error)=>{console.log(error)})
-                
+myVideoPromise.then(  (msg)=> {console.log(msg) }  )                      
+              .catch(  (error)=> {console.log(error) }  )                 // myVideoCallback(
+                                                                                             (msg)=>{ console.log(msg) },
+                                                                                             (error)=>{ console.log(error) }
+                                                                                            )
+                 
         
  
  
@@ -68,3 +73,13 @@ OUTPUT:
 "Thanks for watching my video :)"
 ---------------------------------------
 
+
+
+
+Syntax:
+
+Callback                                                                        Promise
+
+myCallback (  ()=>{},                                                           myPromise.then( ()=>{} )                                  
+              ()=>{}                                                                     .catch( ()=>{} )
+           )
