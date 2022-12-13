@@ -1,0 +1,12 @@
+function greet(name,callback){
+ 
+  var user=prompt('Enter your name');           // First user has to enter the name which is done by 1st function greet()
+  callback(user)
+  
+}
+function callMe(name){
+  console.log('I am '+name)                     // Second the name gets printed which is done by 2nd function callMe()
+}
+
+
+greet(name,callMe)
