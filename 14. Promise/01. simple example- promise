@@ -1,0 +1,11 @@
+const p=new Promise((resolve,reject)=>{
+  var a=1+7;
+  if(a==2){
+    resolve('Success');
+  }else{
+    reject('Failed')
+  }
+})
+
+p.then((msg)=>{console.log(msg)})
+ .catch((msg)=>{console.log(msg)})              //"Failed"
