@@ -1,0 +1,29 @@
+------------------------------------------------------
+Countries names of first few:
+fetch('https://restcountries.com/v3.1/all')
+.then((data)=>data.json())
+.then((actualdata)=>{
+    let arr=[];
+    for(i=0;i<actualdata.length-240;i++){
+        let country=actualdata[i].name.common;
+        arr.push(country);
+    }
+    console.log(arr)
+})
+
+
+
+
+
+------------------------------------------------------
+Countries names:
+fetch('https://restcountries.com/v3.1/all')
+.then((data)=>data.json())
+.then((actualdata)=>{
+    let arr=[];
+    for(i of actualdata){
+        let country=i.name.common;
+        arr.push(country);
+    }
+     console.log(arr)
+})
