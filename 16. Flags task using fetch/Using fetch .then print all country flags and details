@@ -63,3 +63,30 @@ img{
 .content{
     text-align:center;
 }
+
+
+
+
+
+
+
+
+
+
+fetch('https://restcountries.com/v3.1/all')
+.then((data)=>(data.json()))
+.then((result)=>{console.log(result)})
+
+.then((result)=>{
+    for(var i of result){
+        console.log(i.capital[0]);
+        console.log(i.population);
+        console.log(i.region);
+        console.log(i.flags.png);
+        console.log('-----------')
+    }
+})
+
+
+
+
