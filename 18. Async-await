@@ -1,0 +1,14 @@
+async function highlyPopulatedCountries() {
+    const data= await fetch("https://restcountries.com/v2/all");
+    const countries=await data.json();
+    const result= countries
+    .filter((ctry)=>ctry.population>100_00_00_000)
+    .map((ctry)=>ctry.name);
+
+    console.log(result);
+}
+highlyPopulatedCountries()
+
+
+
+While using async await, No need to use .then() method.
