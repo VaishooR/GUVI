@@ -1,0 +1,34 @@
+function createUser(person){
+    document.querySelector('.card').innerHTML+=`
+    <div class=container>
+                    <img src='${person.avatar}'/>
+                    <div class='content'>
+                    <h4>${person.name}</h4>
+                    <button onclick='deleteUser(${person.id})'>Remove</button>
+                    </div>
+    </div>`
+  }
+  
+  async function getUser(){
+    const data=await fetch('https://62ec04c755d2bd170e7b4d17.mockapi.io/users',{method:"GET"});
+    const profile=await data.json();
+    document.querySelector('.card').innerHTML="";
+    profile.forEach((person)=>createUser(person))
+  }
+
+  async function deleteUser(id){
+    console.log('Delete user '+id);
+    const data=await fetch(`https://62ec04c755d2bd170e7b4d17.mockapi.io/users/${id}`,{method:"DELETE"});    
+    const result=await data.json();
+    console.log(result)
+    getUser();
+  }
+  getUser()
+  
+  
+  
+  
+  
+  
+  
+  
