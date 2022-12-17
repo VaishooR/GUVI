@@ -1,0 +1,117 @@
+function createUser(person){
+    document.querySelector('.card').innerHTML+=`
+    <div class=container>
+                    <img src='${person.avatar}'/>
+                    <div class='content'>
+                    <h4>${person.name}</h4>
+                    <p> ${person.id}</p>
+                    <button onclick='deleteUser(${person.id})'>Remove</button>
+                    <button onclick='showEditForm(${person.id})'>Edit</button>
+                    <div class="edituserDetails edituserDetails-${person.id}">
+                        <input value="${person.name}" class='inp1-${person.id}' type="text" placeholder="Name">
+                        <input value="${person.avatar}" class='inp2-${person.id}'type="text" placeholder="Pic">
+                        <button onclick='editUser(${person.id})'>Save</button>
+                    </div>
+                    </div>
+    </div>`
+  }
+  
+  
+  
+  
+  
+  
+// edit
+  function showEditForm(id){
+    console.log('show id ',id);
+    document.querySelector(`.edituserDetails-${id}`).style.display="block";
+  }
+  async function editUser(id){
+    console.log('Edit user');
+    const val1=document.querySelector(`.inp1-${person.id}`).value;
+    const val2=document.querySelector(`.inp2-${person.id}`).value;
+    const data=await fetch(`https://62ec04c755d2bd170e7b4d17.mockapi.io/users/${id}`,
+    {method:"PUT",
+     body: JSON.stringify({name:val1, avatar:val2}),
+     headers: {'Content-Type': 'application/json'}
+    });
+    const profile=await data.json(); 
+    console.log(result);
+    getUser();
+ }
+
+
+
+
+
+
+
+// read
+  async function getUser(){
+    const data=await fetch('https://62ec04c755d2bd170e7b4d17.mockapi.io/users',{method:"GET"});
+    const profile=await data.json();
+    document.querySelector('.card').innerHTML="";
+    profile.forEach((person)=>createUser(person))
+  }
+
+
+
+
+
+
+
+// add
+  async function addUser(){
+    const val1=document.querySelector('.inp1').value;
+    const val2=document.querySelector('.inp2').value;
+    console.log(val1,val2);
+    const data=await fetch(`https://62ec04c755d2bd170e7b4d17.mockapi.io/users`,
+    {method:"POST", 
+     body: JSON.stringify({name:val1, avatar:val2}),
+     headers: {'Content-Type': 'application/json'}
+    });    
+    const result=await data.json();
+    console.log(result);
+    getUser();
+  }
+
+
+
+
+
+
+
+
+// delete
+  async function deleteUser(id){
+    console.log('Delete user '+id);
+    const data=await fetch(`https://62ec04c755d2bd170e7b4d17.mockapi.io/users/${id}`,{method:"DELETE"});    
+    const result=await data.json();
+    console.log(result)
+    getUser();
+  }
+  getUser()
+  
+  
+  
+  
+  
+  
+  
+  
+  
+//   To create or post data:
+//     1. method = "POST";
+//     2. body - data & JSON data
+//     3. header - JSON data
+  
+
+
+//   To edit or update data:
+//     1. method = "PUT" $ pass id;
+//     2. body - data & JSON data
+//     3. header - JSON data
+  
+  
+  
+  
