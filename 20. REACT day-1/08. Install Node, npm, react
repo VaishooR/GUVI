@@ -7,9 +7,18 @@
    --> global installation: package gets installed in the root folder.
    --> local installation: package gets installed in a local folder that the user mentions.
  
-   i) npm root -g
-      -g mentions installing globally. Which means, when a package is installed, using -g installs the package in the root folder. Root folder is the folder where the 
-      Node has been installed in our system.
+   *) npm root -g
+      - '-g' mentions installing globally. Which means, when a package is installed, using -g installs the package in the root folder. Root folder is the folder where the 
+        Node has been installed in our system.
       - so this command is used to find the root folder path.
+     
+   *) npm i yarn -g
+      - To install yarn globally.
       
-    
+   *) npm i react -g
+      - To install react package globally.
+        
+   *) npm i creat-react-app
+      - This command is used to create a new application. 
+      - On using this cmd, React automatically creates all the necessary folders & files that is required to build a react app. No need to create these folders manually.
+      
