@@ -6,7 +6,7 @@
 
 
    --> global installation: package gets installed in the root folder.
-   --> local installation: package gets installed in a local folder that the user mentions.
+   --> local installation: package gets installed in a local folder that is the package.json.
    
    
  
