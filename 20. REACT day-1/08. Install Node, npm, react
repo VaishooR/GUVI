@@ -32,6 +32,9 @@
       cd b32-react
       npm start
       
+   *) npm install
+      - This command installs the node modules folder which contains the libraries/pacakages/dependencies specified in the package.json file.
+      
    --> npm is to install create-react-app 
    --> npx is to excecute create-react-app
    
