@@ -1,0 +1,6 @@
+*) npx create-react-app b32-react
+   cd b32-react
+   npm start
+   
+   npm start command is used to start or run the application.
+   by default the app runs in the port 3000.
