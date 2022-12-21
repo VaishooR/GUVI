@@ -4,3 +4,5 @@
    
    npm start command is used to start or run the application.
    by default the app runs in the port 3000.
+   
+   this creates a sample react app for us. To view that type npm start.
