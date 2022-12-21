@@ -1,0 +1,5 @@
+---> package.json file
+---> node modules folder
+---> src folder -> index.js is the file where the react app starts.
+---> .gitignore file
+---> public folder
