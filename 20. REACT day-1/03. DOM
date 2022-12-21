@@ -7,8 +7,10 @@
      All the DOM of our webpage sits inside the document object. 
      Programmatically, this model allows us to read or even change the content of our page via JavaScript.
      This process of making changes to the HTML elements using Javascript through the DOM is known as DOM manipulation.
-     The main reason we include JavaScript in our HTML is to add instructions on how it should respond to an action taken on the browser. In other words, to add            interactivity on the page.
-     Your job as a JavaScript front end developer is to select and update the DOM elements when a user interacts with a website. DOM is what lets you do this using          JavaScript.
+     The main reason we include JavaScript in our HTML is to add instructions on how it should respond to an action taken on the browser. In other words, to add 
+     interactivity on the page.
+     Your job as a JavaScript front end developer is to select and update the DOM elements when a user interacts with a website. DOM is what lets you do this using 
+     JavaScript.
      
      
      Actions of DOM in JavaScript?
@@ -26,7 +28,8 @@
      
      
      - getElementById()- method returns the element that contains the name id passed. And in case we do not have any id with that specific name, it returns null.
-     - querySelector()-method returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null          is returned.
+     - querySelector()-method returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null   
+       is returned.
      - getElementsByClassName()-method returns an HTMLCollection of all those elements containing the specific name class passed.
      - getElementsByTagName()-method returns an HTMLCollection of all those elements with the tag name passed.
      - querySelectorAll()-method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object. The NodeList object              represents a collection of nodes. The nodes can be accessed by index numbers. 
