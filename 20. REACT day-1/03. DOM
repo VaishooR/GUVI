@@ -1,0 +1,41 @@
+
+---> DOM - Document Object Model
+     Document Object Model is a programming interface for HTML documents. 
+     It is used to represent the page so that programs can change the document structure, style, and content
+     DOM is created by the browser when a web page is loaded. 
+     In graphical form, it's like a tree of elements also called nodes, which are used to represent every single element on the page. 
+     All the DOM of our webpage sits inside the document object. 
+     Programmatically, this model allows us to read or even change the content of our page via JavaScript.
+     This process of making changes to the HTML elements using Javascript through the DOM is known as DOM manipulation.
+     The main reason we include JavaScript in our HTML is to add instructions on how it should respond to an action taken on the browser. In other words, to add            interactivity on the page.
+     Your job as a JavaScript front end developer is to select and update the DOM elements when a user interacts with a website. DOM is what lets you do this using          JavaScript.
+     
+     
+     Actions of DOM in JavaScript?
+     - Change/Remove HTML elements in the DOM/on the page.
+     - Change and add CSS styles to elements
+     - Read and change attributes (href, src, alt), etc.
+     - Create new elements and insert them into the DOM/page.
+     - Attach event listeners to elements (click, keypress, submit)
+     
+     Four kinds of nodes in a DOM tree?
+     - Document Node - Represent the entire page which contains multiple elements in it. 
+     - Element Node- Represent each HTML tag that are used in the HTML code. 
+     - Attribute Node - These are nodes to model  the attribute of HTML elements, for instance <img src = â€œ â€ width = â€œâ€ alt = â€œâ€ > 
+     - Text Node - These are the text content of the HTML element. 
+     
+     
+     - getElementById()- method returns the element that contains the name id passed. And in case we do not have any id with that specific name, it returns null.
+     - querySelector()-method returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null          is returned.
+     - getElementsByClassName()-method returns an HTMLCollection of all those elements containing the specific name class passed.
+     - getElementsByTagName()-method returns an HTMLCollection of all those elements with the tag name passed.
+     - querySelectorAll()-method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object. The NodeList object              represents a collection of nodes. The nodes can be accessed by index numbers. 
+     
+     
+     How to alter(change) values and properties? 
+     - Altering a specific text node:You use the property "nodeValue" and â€œtextContentâ€ to access or update content of a text node
+     - Working with HTML content: when you want to add, update or remove blocks of HTML code from your page, you use the methods like createElement(), innerHTML,              textContent, appendChild() and removeChild().
+     - Working with attributes:when you want to add, update or remove the attribute value of an element, you use the methods like className, classList, id,                    hasAttribute(), getAttribute(), setAttribute(), removeAttribute().
+     - to select an individual element by traversing between multiple elements, You can traverse from one element to another by using properties like parentNode,              previousElementSibling, nextElementSibling,firstElementChild and lastElementChild.
+
+     
