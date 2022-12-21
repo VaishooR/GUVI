@@ -1,0 +1,14 @@
+
+---> Virtual DOM - 
+
+     Virtual DOM is a logic that React uses to increase the speed of its application.
+     It is a copy of the original DOM. 
+     2 states: i) previous state
+               ii) next state
+     Only refrehes elements on which changes have been made. These changes occur only on the virtual DOM not in the Real DOM. 
+     Only changed elements get updated in Original DOM.
+     So this prevents making unnecessary calls to the server which in turn increases the speed of the Application.
+     
+     
+
+     
