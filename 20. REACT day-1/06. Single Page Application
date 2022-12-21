@@ -1,0 +1,15 @@
+     
+---> React - Single Page Application
+
+     - A Single Page Application is a web application or website that interacts with the web browser by dynamically rewriting the current web page with new data from          the web server, instead of the default method of the browser loading entire new pages. This means that the URL of your website will not change completely (page        will not reload), instead it will keep getting content and rewriting the DOM with it instead of loading a new page.     
+     - The goal is faster transitions that make the website feel more like a native app.
+     - In Technical Terms:
+       When building your react-app, you can see that there is only one App.js from where your entire web-app is loaded in fragments and components. This behaviour of        rendering components and pages on a single page and changing the DOM( is a single page behaviour and hence the name), instead of loading a new page with new            content, this makes it feel like a single application.
+     
+     
+     
+ 
+ 
+     
+     
+     
