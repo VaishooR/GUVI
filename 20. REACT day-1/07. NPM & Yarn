@@ -1,0 +1,20 @@
+     
+ NPM:
+ ----
+ 
+ ---> Npm - Node Package Manager
+     - npm is a open source platform from where we can install all the libraries. Open source means anyone can download any package from here or upload any package to it.
+     - React is a library and this library is stored in npm. So React is installed using this npm or from this npm.
+     - When Node is installed in our system, npm automatically gets installed.
+     - Node --> npm --> react library
+     - A developer creates a library, uploads it to any open source platform so that other developers can download it and can use it.
+     
+ ---> Yarn
+     - yarn is yet another open source platform to install libraries like npm. Both serves the same purpose.
+     - yarn is also developed by Facebook, React is also developed by Facebook.
+     - yarn was developed after npm. It is little bit faster than npm.
+     - yarn itself is available inside npm only.
+     - Node --> npm --> yarn --> react library
+     
+     
+     
