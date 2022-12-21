@@ -1,0 +1,14 @@
+--> Install Node js in your system and to check if installed, use these commands in the cmd prompt to check if it is successfully installed.
+       node -v
+       npm -v
+ 
+--> npm commands:
+
+   --> global installation: package gets installed in the root folder.
+   --> local installation: package gets installed in a local folder that the user mentions.
+ 
+   i) npm root -g
+      -g mentions installing globally. Which means, when a package is installed, using -g installs the package in the root folder. Root folder is the folder where the Node has been installed in our system.
+      - so this command is used to find the root folder path.
+      
+    
