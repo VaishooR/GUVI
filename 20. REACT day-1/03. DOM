@@ -32,13 +32,17 @@
        is returned.
      - getElementsByClassName()-method returns an HTMLCollection of all those elements containing the specific name class passed.
      - getElementsByTagName()-method returns an HTMLCollection of all those elements with the tag name passed.
-     - querySelectorAll()-method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object. The NodeList object              represents a collection of nodes. The nodes can be accessed by index numbers. 
+     - querySelectorAll()-method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object. The NodeList object 
+       represents a collection of nodes. The nodes can be accessed by index numbers. 
      
      
      How to alter(change) values and properties? 
      - Altering a specific text node:You use the property "nodeValue" and â€œtextContentâ€ to access or update content of a text node
-     - Working with HTML content: when you want to add, update or remove blocks of HTML code from your page, you use the methods like createElement(), innerHTML,              textContent, appendChild() and removeChild().
-     - Working with attributes:when you want to add, update or remove the attribute value of an element, you use the methods like className, classList, id,                    hasAttribute(), getAttribute(), setAttribute(), removeAttribute().
-     - to select an individual element by traversing between multiple elements, You can traverse from one element to another by using properties like parentNode,              previousElementSibling, nextElementSibling,firstElementChild and lastElementChild.
+     - Working with HTML content: when you want to add, update or remove blocks of HTML code from your page, you use the methods like createElement(), innerHTML,  
+       textContent, appendChild() and removeChild().
+     - Working with attributes:when you want to add, update or remove the attribute value of an element, you use the methods like className, classList, id,    
+       hasAttribute(), getAttribute(), setAttribute(), removeAttribute().
+     - to select an individual element by traversing between multiple elements, You can traverse from one element to another by using properties like parentNode, 
+       previousElementSibling, nextElementSibling,firstElementChild and lastElementChild.
 
      
