@@ -1,0 +1,23 @@
+---> React - Library or Framework?
+
+---> Components - reusable and independent
+
+---> DOM - Document Object Model
+     Document Object Model is a programming interface for HTML documents. 
+     It is used to represent the page so that programs can change the document structure, style, and content
+     DOM is created by the browser when a web page is loaded. 
+     In graphical form, it's like a tree of elements also called nodes, which are used to represent every single element on the page. 
+     All the DOM of our webpage sits inside the document object. 
+     Programmatically, this model allows us to read or even change the content of our page via JavaScript.
+     This process of making changes to the HTML elements using Javascript through the DOM is known as DOM manipulation.
+
+
+---> Virtual DOM - 
+     Virtual DOM is a logic that React uses to increase the speed of its application.
+     It is a copy of the original DOM. 
+     2 states: i) previous state
+               ii) next state
+     Only refrehes elements on which changes have been made. These changes occur only on the virtual DOM not in the Real DOM. 
+     Only changed elements get updated in Original DOM.
+     So this prevents making unnecessary calls to the server which in turn increases the speed of the Application.
+     
