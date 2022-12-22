@@ -25,3 +25,20 @@ useState:
               <button onClick={ () => setCounter(0) }> Reset </button>
               
       
+
+
+
+
+useEffect:
+---------
+
+---> To access the life cycle methods in function component, we use useEffect hook.
+     
+     Syntax:   useEffect( callback-function , dependency array )
+  
+     Ex:       useEffect( () => {console.log("Mounting phase")}, [] )             <--- Occurs during mounting phase, i.e just before return.
+               useEffect( () => {console.log("Mounting phase")}, [counter] )      <--- Occurs during updating phase, i.e when state variable undergoes any updation.
+     
+     
+     
+     
