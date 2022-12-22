@@ -1,5 +1,27 @@
 React Hooks:
+------------
 
-The concepts like state variable, life cycle methods are available only for class components.
-For function components, they are available in the form of React Hooks.
-To use state varaiables in function components, we use react hooks.
+---> The concepts like state variable, life cycle methods are available only for class components.
+---> For function components, they are available in the form of React Hooks.
+
+
+---> To use state varaiables in function components, we use  'useState' hook.
+---> To use lifecycle methods in function components, we use 'useEffect' hook.
+
+
+
+
+
+useState:
+---------
+
+---> useState hook is used to update the state variable.
+
+     Syntax:  const[variable,function] = useState(initial-value)
+     
+     Ex:      const[counter,setCounter] = useState(0)
+              <button onClick={ () => setCounter(counter+1) }> Increment </button>
+              <button onClick={ () => setCounter(counter-1) }> Decrement </button>
+              <button onClick={ () => setCounter(0) }> Reset </button>
+              
+      
