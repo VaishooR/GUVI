@@ -1,0 +1,5 @@
+Mounting
+Updating
+Unmounting
+
+Life cycle methods are only for class components.
