@@ -1,0 +1,4 @@
+To send data from Parent to child, we use props.
+
+To send data from child to Parent, we again use props, but we directly send a function as props from parent and use state variable from child.
+
