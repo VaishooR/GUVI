@@ -1,0 +1,24 @@
+useParams:
+---------
+
+---> To fetch the url parameters and the query parameters from the URL, we use the 'useParams' hook inside the component.
+
+     Ex:  const params = useParams();
+          console.log(params);
+     
+     
+
+Example:
+
+import React from 'react';
+import { useParams } from 'react-router-dom';
+
+export default function User() {
+  const params = useParams();
+  console.log(params);
+  return (
+    <div>
+      <h1>Parameters</h1>
+    </div>
+  );
+}
