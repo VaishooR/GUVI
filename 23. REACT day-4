@@ -15,3 +15,7 @@ Router:
 ---> 'path' and 'element' are the props that we are giving to the <Route> component.
      'to' is the props we are giving to <Link> component.
       The 'path' and 'to' has to be same.
+      
+      
+      
+      
