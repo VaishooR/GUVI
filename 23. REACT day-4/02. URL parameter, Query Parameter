@@ -1,0 +1,51 @@
+URL parameter: The parameter, usually an id, that is added dynamically by the user in the URL is URL parameter.
+               For ex, if there is a table with a list of users, and we have to edit an users detail, we need an id for each user.
+               These ids are given as url parameter.
+               
+               Ex:   <Link to="/user/10">User</Link>
+                     <Route path="/user/:userid" element={<User />}></Route>
+                     
+                     
+                   
+Example:
+
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import User from './User';
+
+export default function App() {
+  return (
+    <div>
+      <BrowserRouter>        
+          <Link to="/user/10?">User</Link> &nbsp; &nbsp;
+        <Routes>
+          <Route path="/user/:userid" element={<User />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+
+  
+  
+  
+  
+Query parameter: Query parameters are extra details that we type in the URL.
+
+               Ex:   <Link to="/user/10 ? filter=true&sort=asc" >User</Link>
+                     <Route path="/user/:userid" element={<User />}></Route>
+                      
+                     Here the 'to' and 'path' for query parameters need not be the same. 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
