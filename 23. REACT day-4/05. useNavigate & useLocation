@@ -1,0 +1,7 @@
+---> So to go to another component, both <Link> or useNavigate() hook can be used. In navigate the 'to' value of <Link> has to be mentioned.
+     But using useNavigate, we can also send data to another component.
+     
+---> Navigate function takes two parameters. i) path to the component it has to go on clicking.
+                                             ii) data to be sent in the form of object of objects.
+                                                 To send the data, we use 'state' keyword.
+     Syntax: { () => navigate( (" "), { state : {name: ' ', age: ' '} } ) }
