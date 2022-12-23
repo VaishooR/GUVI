@@ -1,0 +1,180 @@
+useNavigate:
+-----------
+
+---> This hook is used to go forward, go back or go to any particular component.
+     import {useNavigate} from 'react-router-dom';
+     const navigate= useNavigate();
+     
+     Ex: <button onClick={ () => navigate(-1) }>Go Back</button>
+         <button onClick={ () => navigate(1) }>Go Forward</button> 
+         <button onClick={ () => navigate('user/10') }>Go to User</button>
+         
+Example:
+
+
+App.js:
+
+import * as React from 'react';
+import './style.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+} from 'react-router-dom';
+import User from './User';
+
+export default function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <div className="linkzz">
+          <Link to="/">HomePage</Link> &nbsp; &nbsp;
+          <Link to="/electronics">Electronics</Link> &nbsp; &nbsp;
+          <Link to="/vegetables">Vegetables</Link> &nbsp; &nbsp;
+          <Link to="/sweets/">Sweets</Link> &nbsp;&nbsp;
+          <Link to="/user/10?filter=true&sort=asc">User</Link> &nbsp; &nbsp;
+        </div>
+
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/electronics" element={<Electronics />}></Route>
+          <Route path="/vegetables" element={<Vegetables />}></Route>
+          <Route path="/sweets" element={<Sweets />}></Route>
+          <Route path="/user/:userid" element={<User />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+function HomePage() {
+  const navigate = useNavigate();
+  return (
+    <div>
+      <div className="container">
+        <h1>Welcome to Instamart</h1>
+        <h3>Happy Shopping :)</h3>
+      </div>
+      <div className="con2">
+        <button onClick={() => navigate(-1)}>Go Back</button> &nbsp;&nbsp;
+        <button onClick={() => navigate(1)}>Go Forward</button> &nbsp;&nbsp;
+        <button onClick={() => navigate('user/10')}>Go to User</button>
+      </div>
+    </div>
+  );
+}
+
+function Electronics() {
+  const navigate = useNavigate();
+  return (
+    <div className="items">
+      <h1>Electronics</h1>
+      <ul>
+        <li>Phone</li>
+        <li>Laptop</li>
+        <li>Television</li>
+      </ul>
+      <button onClick={() => navigate(-1)}>Go Back</button> &nbsp;&nbsp;
+      <button onClick={() => navigate(1)}>Go Forward</button>
+    </div>
+  );
+}
+
+function Vegetables() {
+  const navigate = useNavigate();
+  return (
+    <div className="items">
+      <h1>Vegetables</h1>
+      <ul>
+        <li>Tomato</li>
+        <li>Cauliflower</li>
+        <li>Carrot</li>
+      </ul>
+      <button onClick={() => navigate(-1)}>Go Back</button> &nbsp;&nbsp;
+      <button onClick={() => navigate(1)}>Go Forward</button>
+    </div>
+  );
+}
+
+function Sweets() {
+  const navigate = useNavigate();
+  return (
+    <div className="items">
+      <h1>Sweets</h1>
+      <ul>
+        <li>Kaju Katli</li>
+        <li>Halwa</li>
+        <li>Milk cake</li>
+      </ul>
+      <button onClick={() => navigate(-1)}>Go Back</button> &nbsp;&nbsp;
+      <button onClick={() => navigate(1)}>Go Forward</button>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+User.js:
+
+import React from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+
+export default function User() {
+  const params = useParams();
+  const navigate = useNavigate();
+  console.log(params);
+  return (
+    <div>
+      <h1>UserId: {params.userid}</h1>
+      <button onClick={() => navigate(-1)}>Go Back</button> &nbsp;&nbsp;
+      <button onClick={() => navigate(1)}>Go Forward</button>
+    </div>
+  );
+}
+
+
+
+
+
+
+
+h1,
+p {
+  font-family: Lato;
+}
+
+.linkzz {
+  background-color: yellow;
+  text-align: center;
+  padding: 30px;
+}
+.container {
+  background-color: orangered;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+.items {
+  background: linear-gradient(to bottom, yellow, skyblue, lawngreen);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 50px;
+  color: black;
+}
+
+.con2{
+  text-align: center;
+  background-color: yellow;
+  padding: 30px;
+}
+
+
+
+
