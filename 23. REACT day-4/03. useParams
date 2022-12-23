@@ -14,11 +14,18 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function User() {
+
   const params = useParams();
   console.log(params);
-  return (
-    <div>
-      <h1>Parameters</h1>
-    </div>
+  
+  return (   
+       <h1>UserId: {params.userid}</h1>                 // UserId: 10         
   );
-}
+}                                                       //Output: {userid : "10"}
+
+
+
+
+import User from './User';
+<Link to="/user/10?filter=true&sort=asc">User</Link>
+<Route path="/user/:userid" element={<User />}></Route>
