@@ -1,0 +1,9 @@
+Router:
+-------
+
+Routers are used to navigate between components.
+To achieve this, we use the 'react-router-dom' package.
+
+npm i react-router-dom
+
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
