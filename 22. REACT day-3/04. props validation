@@ -1,0 +1,42 @@
+---> To use props validation, we use 'prop-types' package.
+     npm i prop-types
+     npm start
+     import PropTypes from 'prop-types'
+     
+---> If we are accessing a props in the child comp from the parent comp, and if the parent comp fails to send the props from the parent comp to the child, then
+     it throws a warning in the console.
+     
+     Ex: 
+     
+     Parent comp:
+     -----------
+     <BasicCard heading=" " content=" " toggleCompFromParent={ ()=>() } />
+     
+     
+     
+     Child comp:
+     ----------
+     function BasicCard( props ){
+     return( 
+             {props.heading}
+             {props.content}
+             {props.items}
+             {props.toggleCompFromParent}
+           )       
+     }  
+     
+     BasicCard.propTypes={
+           heading: PropTypes.string.isRequired,
+           content: PropTypes.string.isRequired,
+           items: PropTypes.string.isRequired,
+           toggleCompFromParent: PropTypes.func,     
+     }
+     
+     
+ 
+ ---> Here we have accessed the 'props.items' props from the parent, but the parent has failed to send the props, so it throws a warning.
+      This is known as props validation.
+     
+     
+     
+     
