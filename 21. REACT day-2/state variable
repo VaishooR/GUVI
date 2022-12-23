@@ -1,0 +1,6 @@
+State varaible is the variable that has scope throughtout the entire class component.
+
+State variables cannot be directly changed or updated. 
+
+To update it, we use this.setState in class components.
+In function components, we use useState hook.
