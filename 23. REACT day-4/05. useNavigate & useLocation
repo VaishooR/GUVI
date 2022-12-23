@@ -5,3 +5,5 @@
                                              ii) data to be sent in the form of object of objects.
                                                  To send the data, we use 'state' keyword.
      Syntax: { () => navigate( (" "), { state : {name: ' ', age: ' '} } ) }
+     
+     
