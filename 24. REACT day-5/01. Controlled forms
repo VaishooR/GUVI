@@ -5,3 +5,5 @@
 ---> e.preventDefault() prevents automatic page refresh and also prevents the form values being displayed as query parameters.
 
 ---> Form validation is necessary to prevent the Form from being submitted with empty inputs.
+
+---> If we want to use the 'key' in a dynamic way, we use square brackets.  ex: { [e.target.name] : e.target.value}
