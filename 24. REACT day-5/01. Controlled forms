@@ -1,2 +1,7 @@
-Controlled forms: Everything has to handled by the state variables.
+---> Controlled forms: Everything has to handled by the state variables.
                   So each and every time when we make changes to the input, it gets updated in the state variable.
+
+
+---> e.preventDefault() prevents automatic page refresh and also prevents the form values being displayed as query parameters.
+
+---> Form validation is necessary to prevent the Form from being submitted with empty inputs.
