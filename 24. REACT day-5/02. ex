@@ -1,0 +1,146 @@
+ const [state,setstate]=useState({
+    firstname:'',
+    lastname:'',
+    email:'',
+    gender:'',
+    courses:'react'
+  })
+
+  const [errors,seterrors]=useState({
+    firstname:'',
+    lastname:'',
+    email:'',
+    gender:''
+  })
+
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    var errKeys =  Object.keys(state).filter((key)=>{
+      if(state[key]===''){
+        return key;
+      }
+    });
+    if(errKeys.length>=1){
+      alert('Please fill all the details.');
+    }else{
+      console.log(state,errors)
+    }
+    
+    
+    
+    
+    
+
+
+
+
+
+
+import * as React from 'react';
+import './style.css';
+import { useState } from 'react';
+
+export default function App() {
+  const [firstname, setfirstname] = useState('');
+  const [lastname, setlastname] = useState('');
+  const [email, setemail] = useState('');
+  const [gender, setgender] = useState('');
+  const [courses, setcourses] = useState('react');
+
+  function handleSubmit(e) {
+    console.log({ firstname, lastname, email, gender, courses });
+  }
+
+  return (
+    <div>
+      <h3>Form</h3>
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <div>
+          <label>First Name: </label>
+          <input
+            type="text"
+            name="firstname"
+            value={firstname}
+            onChange={(e) => {
+              setfirstname(e.target.value);
+              console.log(firstname);
+            }}
+          />
+        </div>
+        <br />
+        <div>
+          <label>Last Name: </label>
+          <input
+            type="text"
+            name="lastname"
+            value={lastname}
+            onChange={(e) => {
+              setlastname(e.target.value);
+              console.log(lastname);
+            }}
+          />
+        </div>
+        <br />
+        <div>
+          <label>Email: </label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={(e) => {
+              setemail(e.target.value);
+            }}
+          />
+        </div>
+        <br />
+        <div>
+          <label>Gender:</label>
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+            onChange={(e) => {
+              setgender(e.target.value);
+              console.log(gender);
+            }}
+          />
+          Male
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+            onChange={(e) => {
+              setgender(e.target.value);
+              console.log(gender);
+            }}
+          />
+          Female
+        </div>
+        <br />
+        <div>
+          <label>Courses: </label>
+          <select
+            name="courses"
+            value={courses}
+            onChange={(e) => {
+              setcourses(e.target.value);
+              console.log(courses);
+            }}
+          >
+            <option value="react">React</option>
+            <option value="node">Node</option>
+            <option value="angular">Angular</option>
+            <option value="javascript">Javascript</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <button type="submit">Submit</button> &nbsp;&nbsp;
+          <button type="reset">Reset</button>
+        </div>
+        <br />
+      </form>
+    </div>
+  );
+}
