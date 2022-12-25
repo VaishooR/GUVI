@@ -1,0 +1,6 @@
+POSTMAN Tool:
+
+Postman is application that allows us to do Api testing.
+It is like browser that doesn't render html.
+In browser we can hit only get HTTP request but here we can hit get,post,put,patch,delete and many more HTTP request in api.
+We can save request,create collection and folders for organize of request.
