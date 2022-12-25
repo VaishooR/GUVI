@@ -11,3 +11,23 @@ function HigherOrderComp(Component) {                        <------ App compone
   }  
 }
 export default HigherOrderComp;
+
+
+
+
+
+
+
+function HigherOrderComp(Component) {
+  return(props)=>{
+    return (
+      <div>
+        <h3>Higher Order component</h3>
+        <Component {...props}/>
+      </div>
+    );
+  }
+  
+}
+export default HigherOrderComp;
+
