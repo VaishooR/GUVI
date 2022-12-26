@@ -1,1 +1,7 @@
 node day 1
+
+
+---> Frontend javascript: Javascript that runs by interpreting the browser is known as frontend js.
+                          Javascript depends on the browser to run, only because it contains V8 engine(chrome).
+                          To make javascript independent of browser, a copy of V8 engine was taken out and made as a seperate server.
+                          Now Javascript program runs independently on the terminal, without depending on browsers. This independent js program is known as Node js.
