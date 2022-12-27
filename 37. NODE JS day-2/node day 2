@@ -28,6 +28,17 @@
         --> devDependencies contains packages that we need only during the development, not during production.
         --> During production, we wont stop the server at any cause. So nodemon which is used to restart the server, is not required during the production.
 
+---> app.use middleware:
+        --> middlewares contains common codes that has to be excecuted on every endpoints.
+        --> the middleware path and the endpoint, if both matches, then 1st the middleware excecution is done, and then moves to the endpoints.
+        --> it is not mandatory to have only 1 middleware. We can use multiple middlewares. 
+        --> All the methods like app.get, app.put, app.post has to enter into this middlewares first.
+
+
+
+
+
+
 
 Example:
 
