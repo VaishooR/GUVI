@@ -11,5 +11,13 @@ node day 1
               was created by Ryan Dahl in 2009.
               is a single threaded application which makes it lighter and faster.
               uses event driven & a non-blocking i/o model.
+              Event driven means event queue, worker threads.
               
               
+---> How Nodejs works:
+
+     Application --> V8 engine --> Event Queue --> Event Loop --> worker thread( if it is a blocking code) --> sends a callback to Event Loop.
+     Application <-- V8 engine <-- Event Queue <-- Event Loop(if non-blocking)
+     
+     Once worker thread completes the asynch codes, sends a call back to event loop.
+     Event loop gives priorty to worker thread's callbacks and excecutes those codes.
