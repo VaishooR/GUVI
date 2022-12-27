@@ -15,14 +15,18 @@
      --> Generally to run nodejs codes, we use 'node index.js' command.
      --> To be more generic, go to pacakage.json file, in "script{}" type "start":"node index.js"
      --> Now instead of 'node index.js' command, we can use 'npm start'.
-     --> But everytime when we make changes in the code, it doesnot automatically reflect on the output. We have to stop and restart the server everytime when we make a change.
+     --> But everytime when we make changes in the code, it doesnot automatically reflect on the output. We have to stop and restart the server everytime when we make
+         a change.
      --> To overcome this, we use nodemon package.
      --> Nodemon automatically refelects the changes we make to the code, in the output. No need to stop the server, for every change in the code.
      --> To install nodemon, type 'npm i nodemon --save-dev' command.
      --> -dev is used because, we require nodemon only during development. Not during production.
      --> Type 'nodemon start' or 'nodemon index.js' to run the code.
      
-
+---> devDependencies:
+        --> Go to package.json file and check devDependencies. Inside which nodemon package is present.
+        --> devDependencies contains packages that we need only during the development, not during production.
+        --> During production, we wont stop the server at any cause. So nodemon which is used to restart the server, is not required during the production.
 
 
 Example:
