@@ -24,3 +24,11 @@ node day 1
 
      Event Queue and Worker threads both are Queues where each task is queued inside them.
      
+
+---> Blocking Codes vs Non-blocking codes:
+
+     Blocking codes are those which depends on a 3rd party resiurce for its excecution.
+     It takes time to excecute.
+     
+     Non-blocking codes doesnt depend on any 3rd party resource.
+     Gets excecuted wo taking time.
