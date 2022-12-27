@@ -34,16 +34,16 @@ node day 1
      Gets excecuted wo taking time.
      
      
-To run JS codes in backend:
-    Create a file in VScode with .js extension. --> Open Terminal --> Type 'node <filename>' --> Press Enter.
-    Now the javascript code runs on the terminal, without the help of a browser. 
-    This platform, where js codes run wo the help of a browser is known as Nodejs.
+---> To run JS codes in backend:
+         Create a file in VScode with .js extension. --> Open Terminal --> Type 'node <filename>' --> Press Enter.
+         Now the javascript code runs on the terminal, without the help of a browser. 
+         This platform, where js codes run wo the help of a browser is known as Nodejs.
     
-So Node js is:
-    An open-source, cross-platform, 
-    back-end JavaScript runtime environment 
-    that runs on the V8 engine and executes
-    JavaScript code outside a web browser.
+---> So Node js is:
+         An open-source, cross-platform, 
+         back-end JavaScript runtime environment 
+         that runs on the V8 engine and executes
+         JavaScript code outside a web browser.
     
     
 ---> Modules:
