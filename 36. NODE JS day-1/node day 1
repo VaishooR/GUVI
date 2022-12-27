@@ -59,6 +59,21 @@ fs module
 http module
 
 
+OS module:
+     --> The OS module provides information about the computer's operating system.
+     
+     --> Ex: const os = require("os");
+             console.log(os.arch());           // arch()	Returns the operating system CPU architecture
+             console.log(os.hostname());       // hostname()	Returns the hostname of the operating system
+             console.log(os.platform());       // platform()	Returns information about the operating system's platform
+             console.log(os.tmpdir());         // tmpdir()	Returns the operating system's default directory for temporary files
+             console.log(os.type());           // type()	Returns the name of the operating system
+             console.log(os.userInfo());       // userInfo()	Returns information about the current user
+             
+             
+             
+             
+
 HTTP module:
 
      Steps includes:
