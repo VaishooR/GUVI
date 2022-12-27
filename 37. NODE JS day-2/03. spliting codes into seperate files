@@ -1,0 +1,58 @@
+Create two folders: i) router folder --> employee.js
+                    ii) module folder --> employee.js
+                    iii) index.js file
+                    
+     
+router folder --> employee.js codes:
+------------------------------------
+const express=require('express');
+const router = express.Router();
+var employeeModule = require ("../module/employee")
+
+router.get('/get',employeeModule.getEmployee)
+
+module.exports=router;    //router is exported. import this in index.js
+
+// getEmployee function from 'module' folder, 'employee' file is being imported here.
+// in the varaible name 'employeeModule'
+// employeeModule.getEmployee --> to access the function from the router employee module 
+
+
+
+
+
+module folder --> employee.js codes:
+------------------------------------
+module.exports.getEmployee= (req, res, next) => {
+    res.send({
+        name:'Employee 1',
+        designation: 'Developer',
+    })
+}
+
+// getEmployee is a function name. 
+// this is a callback function which is being exported.
+
+
+
+
+index.js:
+---------
+const express=require('express');
+const employeeRouter= require('./router/employee'); // the router is imported here
+const app=express();
+app.use(express.json());
+
+app.use('/',(req, res, next) =>{
+    console.log('middleware 1 works')
+    next()
+});
+
+app.use('/employee',employeeRouter);
+
+app.listen(3000)
+
+
+
+
+
