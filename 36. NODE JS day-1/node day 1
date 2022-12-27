@@ -9,7 +9,7 @@ node day 1
 
 ---> Node Js: is a server side Javascript library.
               was created by Ryan Dahl in 2009.
-              is a single threaded application which makes it lighter and faster.
+              is a single threaded application, it uses only one event loop, so single threaded, which makes it lighter and faster.
               uses event driven & a non-blocking i/o model.
               Event driven means event queue, worker threads.
               
@@ -21,3 +21,6 @@ node day 1
      
      Once worker thread completes the asynch codes, sends a call back to event loop.
      Event loop gives priorty to worker thread's callbacks and excecutes those codes.
+
+     Event Queue and Worker threads both are Queues where each task is queued inside them.
+     
