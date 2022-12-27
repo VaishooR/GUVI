@@ -1,0 +1,40 @@
+---> Expressjs: is a framework that handles all the codes that we write manually in Nodejs, by itself.
+                Express. js is a framework based on Node. js which is used for building web-application using approaches and principles of Node.
+               
+---> In React, we use create-react-app command to create an application. This automatically creates pacakage.json file, node modules folder everything.
+     But in Node, to install package.json file, type          npm init
+                  to install node modules, type               npm i express
+ 
+ ---> To run the code:
+             In Terminal, type 'npm index.js'
+             Go to browser, type localhost:3000
+
+Example:
+
+const express=require('express');
+const app=express();
+app.use(express.json());                                   // This middleware is used to convert the req.body into json format.
+app.use('/',(req, res, next) =>{
+    console.log('middleware works')
+    next()                                                 // moves to next code, else stops here itself
+});
+app.get('/users',(req, res, next) =>{
+    res.send("Hello")
+});
+app.listen(3000)
+
+
+
+
+
+const express=require('express');
+const app=express();
+app.use(express.json());
+app.use('/',(req, res, next) =>{
+    console.log('middleware works')
+    res.end('End response in  middleware')                   // ends here itself
+});
+app.get('/users',(req, res, next) =>{
+    res.send("Hello")
+});
+app.listen(3000)
