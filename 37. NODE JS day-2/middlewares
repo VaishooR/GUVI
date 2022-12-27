@@ -1,0 +1,48 @@
+const express=require('express');
+const app=express();
+app.use(express.json());
+
+app.use('/',(req, res, next) =>{
+    console.log('middleware 1 works')
+    next()
+});
+app.use('/',(req, res, next) =>{
+    console.log('middleware 2 works')
+    next()
+});
+app.use('/users',(req, res, next) =>{
+    console.log('User middleware')
+    next()
+});
+
+app.get('/',(req, res, next) =>{
+    res.send("Check console")
+    next()
+});
+
+app.get('/users',(req, res, next) =>{
+    res.send("Hello")
+    next()
+});
+
+app.get('/post',(req, res, next) =>{
+    res.send("World")
+});
+app.listen(3000)
+
+
+
+
+Output:
+/
+middleware 1 works
+middleware 2 works
+
+/users
+middleware 1 works
+middleware 2 works
+User middleware
+
+/post
+middleware 1 works
+middleware 2 works
