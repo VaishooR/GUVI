@@ -60,7 +60,9 @@ http module
 
 
 OS module:
-     --> The OS module provides information about the computer's operating system.
+     --> OS is a node module used to provide information about the computer operating system. 
+         It provides functions to interact with the operating system. 
+         It provides the hostname of the operating system and returns the amount of free system memory in bytes. 
      
      --> Ex: const os = require("os");
              console.log(os.arch());           // arch()	Returns the operating system CPU architecture
