@@ -54,3 +54,16 @@ node day 1
      
 
     
+os module
+fs module 
+http module
+
+
+HTTP module:
+
+     Steps includes:
+     --> First create a server using http module.
+     --> req url has all the details regarding the client info like query parameters.
+     --> Depeneding upon the req url, write the response.
+     --> End the response.
+     --> Finally listen to the server in any port.
