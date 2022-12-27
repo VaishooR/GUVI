@@ -46,5 +46,11 @@ So Node js is:
     JavaScript code outside a web browser.
     
     
-    
+---> Modules:
+     Modules are a set of codes that are written on a seperate file and then imported where it is required.
+     3 types: i) in-built modules: Node js itself consists of some modules. Doesnt require installation.
+              ii) 3rd-party modules: Modules written by developers across the world, upload it to npm, from where we can download and use it. Installed using npm.
+              iii) custom modules: Created by the users within the application and exported.
+     
+
     
