@@ -60,6 +60,7 @@ http module
 
 
 OS module:
+---------
      --> OS is a node module used to provide information about the computer operating system. 
          It provides functions to interact with the operating system. 
          It provides the hostname of the operating system and returns the amount of free system memory in bytes. 
@@ -75,6 +76,7 @@ OS module:
              
              
 FS Module (file System):
+-----------------------
 
      --> The Node.js file system module allows you to work with the file system on your computer.
          To include the File System module, use the require() method:
@@ -91,7 +93,10 @@ FS Module (file System):
          Delete files
          Rename files      
 
+
+
 HTTP module:
+-----------
 
      Steps includes:
      --> First create a server using http module.
