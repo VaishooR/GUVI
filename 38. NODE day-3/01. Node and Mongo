@@ -3,6 +3,9 @@
                                 npm start
 ---> In connect.js, import mongodb. 
 ---> Import MongoClient. Using MongoClient only we have connect our mongodb with nodejs.
+     var MongoClient = require('mongodb').MongoClient;    or
+     const {MongoClient} = require('mongodb');
+     
      MongoClient: 
      --> MongoClient is just a Nodejs library that handles connecting to and interacting with a MongoDB database.
      --> It Is A NodeJs Module That Lets You Manipulate,Create,Connect To A Mongo Database.
@@ -25,6 +28,8 @@
                  }
              }
          }
-         
+ ---> To make a connection the function we have to use is MongoClient.connect(). Now your mongodb will be connected.
+      The information regarding the connection, that info will be saved in the constant 'client'.
+      The client constant gets the connection string.     
          
          
