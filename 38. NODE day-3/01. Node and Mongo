@@ -1,0 +1,7 @@
+Create a folder 'shared'  -->  a file 'connect.js'.
+Install mongodb library.   npm i mongodb
+                           npm start
+In connect.js, import mongodb. 
+Import MongoClient. Using MongoClient only we have connect our mongodb with nodejs.
+Now exporting an object. This object has two values: i) db initialised to empty value.
+                                                     ii) connect() function
