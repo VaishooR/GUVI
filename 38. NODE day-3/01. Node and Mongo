@@ -19,7 +19,7 @@
              }
          }
  ---> Inside this connect function, we are going to write the code to connect the mongodb with nodejs. 
-      Ex: module.exports={
+      Ex: module.exports={            // exported
              selectedDB:{},
              async connect(){
                  try{
@@ -31,9 +31,17 @@
                  }
              }
          }
- ---> To make a connection the function we have to use is MongoClient.connect(). Now your mongodb will be connected.
+---> To make a connection the function we have to use is MongoClient.connect(). Now your mongodb will be connected.
       The information regarding the connection, that info will be saved in the constant 'client'.
       The client constant gets the connection string.     
       In this connected information, we get all the dbs that are available in the NoSQLBooster.
       But we need only one db, and store it in this.db=client.db('test')
          
+---> To excecute something, we need to call it from index.js
+     import the connect.js in index.js
+     const mongo= require('./shared/connect');      //imported
+     mongo.connect();
+     
+     
+     
+     
