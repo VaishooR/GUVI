@@ -3,6 +3,10 @@
                                 npm start
 ---> In connect.js, import mongodb. 
 ---> Import MongoClient. Using MongoClient only we have connect our mongodb with nodejs.
+     MongoClient: 
+     --> MongoClient is just a Nodejs library that handles connecting to and interacting with a MongoDB database.
+     --> It Is A NodeJs Module That Lets You Manipulate,Create,Connect To A Mongo Database.
+     
 ---> Now exporting an object. This object has two values: i) db initialised to empty value.
                                                           ii) connect() function
      Ex: module.exports={
